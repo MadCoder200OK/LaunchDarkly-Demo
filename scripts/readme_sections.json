@@ -1,0 +1,123 @@
+[
+  {
+    "after": "Keep keys and trigger URLs in the local `.env` file. Restart with `python3 dev.py` after switching to live mode, then refresh the page. [SDK credential docs](https://launchdarkly.com/docs/home/account/environment/keys).",
+    "features": [
+      "settings",
+      "sdk-client",
+      "public-config"
+    ]
+  },
+  {
+    "after": "Review the fields → **Create**, then configure targeting in the following steps. [Flag creation docs](https://launchdarkly.com/docs/home/flags/new).",
+    "features": [
+      "flag-evaluation",
+      "offers-panel",
+      "offers-hero"
+    ]
+  },
+  {
+    "after": "Add the target → **Review and save**. Visit the app once if the context picker is empty; you can also enter its key. [Individual targeting docs](https://launchdarkly.com/docs/home/flags/individual-targeting).",
+    "features": [
+      "demo-contexts",
+      "context"
+    ]
+  },
+  {
+    "after": "**Review and save.** QA and Premium should see a dark homepage with **Offers picked for you** and their first name. [Targeting rule docs](https://launchdarkly.com/docs/home/flags/target-rules).",
+    "features": [
+      "context",
+      "flag-evaluation"
+    ]
+  },
+  {
+    "after": "Keep Priya’s page open at the top. Turn **Personalized Offers → Test → Off → Review and save**. Watch the dark personalized homepage switch to the light homepage. Restore **On → Review and save** to bring back the personalized view for QA and Premium.",
+    "features": [
+      "flag-listener",
+      "sdk-status-listener",
+      "stream-bridge",
+      "sse-api",
+      "browser-stream"
+    ]
+  },
+  {
+    "after": "3. Confirm the existing panel returns and **Explore offer** succeeds. Clear incident simulation **before** restoring the flag On.",
+    "features": [
+      "incident-controls",
+      "engagement",
+      "flag-trigger",
+      "remediation-cli",
+      "http-errors"
+    ]
+  },
+  {
+    "after": "Review values → **Create**. This measures the percentage of users who explore an offer, so repeat clicks do not add converted users. [Binary metric docs](https://launchdarkly.com/docs/home/metrics/custom).",
+    "features": [
+      "experiment-events",
+      "experiment-visitors"
+    ]
+  },
+  {
+    "after": "The application includes the Observability and Session Replay plugins. [JavaScript Observability setup](https://launchdarkly.com/docs/sdk/observability/javascript).",
+    "features": [
+      "browser-sdk",
+      "browser-identity",
+      "telemetry-loading",
+      "browser-telemetry"
+    ]
+  },
+  {
+    "after": "**Observability → Sessions → select the demo session → Play.** Find the Explore action and visible incident. [Session replay docs](https://launchdarkly.com/docs/home/observability/session-replay).",
+    "features": [
+      "browser-privacy"
+    ]
+  },
+  {
+    "after": "**Errors → ABC Bank offer request failed.** Inspect the stack and fictional visitor/variation attributes. [Error monitoring docs](https://launchdarkly.com/docs/home/observability/errors).",
+    "features": [
+      "offer-error"
+    ]
+  },
+  {
+    "after": "**Logs → Last 24 hours.** Find **ABC Bank offer explored** or **ABC Bank offer request failed** and inspect attributes. [Logs docs](https://launchdarkly.com/docs/home/observability/logs).",
+    "features": [
+      "offer-log"
+    ]
+  },
+  {
+    "after": "**Traces → `abc.offer.explore`.** Inspect the browser request and its correlated flag evaluation. [Traces docs](https://launchdarkly.com/docs/home/observability/traces).",
+    "features": [
+      "offer-trace"
+    ]
+  },
+  {
+    "after": "**Observability metrics → `abc.offer.request.duration_ms`.** Select the relevant time range and inspect measured duration. [Observability metric docs](https://launchdarkly.com/docs/home/observability/observability-metrics).",
+    "features": [
+      "offer-duration"
+    ]
+  },
+  {
+    "after": "```text\nYou are the ABC Bank offer companion. Help a {{visitor_tier}} visitor understand the supplied fictional offers. Start with \"Let's explore:\" and give exactly three short bullet points: a relevant benefit, one factual detail, and a next step to Explore offer. Be warm and helpful, use only supplied facts, and do not claim to perform real banking actions.\n```",
+    "features": [
+      "ai-shared-client",
+      "ai-config",
+      "model-provider"
+    ]
+  },
+  {
+    "after": "Change the default to **Guided → Review and save**. Ask the same question again. Expect **Let's explore:**, three bullets, and `guided` metadata, without restarting the app.",
+    "features": [
+      "chat-api",
+      "chat-panel",
+      "ai-response-error",
+      "managed-invocation",
+      "ai-fallback"
+    ]
+  },
+  {
+    "after": "**Offer Assistant → Monitoring → Test.** Inspect requests, duration, tokens, errors, and estimated cost after processing. If the provider fails, the app displays a labeled scripted fallback. Prompt and response content are excluded from AI telemetry. [Python AI SDK docs](https://launchdarkly.com/docs/sdk/ai/python).",
+    "features": [
+      "rejected-usage",
+      "ai-sdk-startup"
+    ]
+  }
+]

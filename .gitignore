@@ -1,0 +1,43 @@
+# Local credentials and environment overrides
+.env
+.env.*
+!/.env.example
+*.pem
+*.key
+
+# Installed dependencies, generated builds, and test output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+node_modules/
+dist/
+.vite/
+coverage/
+.demo-cache/
+*.log
+
+# Editor, tooling, and OS files
+.idea/
+.vscode/
+/.agents/
+/.claude/
+/.codex/
+.DS_Store
+Thumbs.db
+
+# Drafts, presenter notes, and raw demo evidence
+/output/
+/PRD.md
+/docs/ai-configs-setup.md
+/docs/experimentation-observability.md
+/docs/incident-walkthrough.md
+/docs/independent-audit.md
+/docs/launchdarkly-setup.md
+/docs/progress-checklist.md

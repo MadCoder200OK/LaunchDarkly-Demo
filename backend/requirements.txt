@@ -1,0 +1,2 @@
+# Use the same pinned Python dependencies as the one-command launcher.
+-r requirements.lock
