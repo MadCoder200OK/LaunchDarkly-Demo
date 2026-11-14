@@ -20,7 +20,7 @@ The launcher installs the pinned dependencies from `backend/requirements.lock` a
 https://github.com/user-attachments/assets/fc993586-6c5f-4afb-b099-51c2ffa6fc83
 
 
-[![Watch the ABC Bank demo. Alex sees the personalized homepage through individual QA targeting.](docs/demo/abc-bank-demo-preview.jpg)](docs/demo/abc-bank-launchdarkly-demo.mp4)
+-------------------------------------------------------------------------------------------------------------------------------
 
 ## What to expect
 
