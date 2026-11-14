@@ -1,4 +1,4 @@
-"""Real Python SDK adapter; release and targeting decisions come from LaunchDarkly.
+"""Python SDK adapter; release and targeting decisions come from LaunchDarkly.
 
 Official setup: https://launchdarkly.com/docs/sdk/server-side/python
 Listener contract: https://launchdarkly.com/docs/sdk/features/flag-changes
